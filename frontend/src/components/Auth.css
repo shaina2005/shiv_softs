@@ -1,0 +1,124 @@
+/* ── Auth shared styles ── */
+
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f7ff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.auth-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.auth-title {
+  margin: 0 0 0.25rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.auth-subtitle {
+  margin: 0 0 1.75rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.field-group input {
+  padding: 0.65rem 1rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 999px;       /* fully rounded */
+  font-size: 0.95rem;
+  color: #1a1a2e;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #fafafa;
+}
+
+.field-group input::placeholder {
+  color: #9ca3af;
+}
+
+.field-group input:focus {
+  border-color: #38bdf8;      /* sky-blue focus ring */
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.18);
+}
+
+.auth-btn {
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 999px;       /* fully rounded */
+  background: #38bdf8;        /* sky blue */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.auth-btn:hover {
+  background: #0ea5e9;
+}
+
+.auth-btn:active {
+  transform: scale(0.98);
+}
+
+.auth-redirect {
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 0.88rem;
+  color: #6b7280;
+}
+
+.auth-redirect span {
+  color: #0ea5e9;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-redirect span:hover {
+  text-decoration: underline;
+}
+
+.auth-error {
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  color: #dc2626;
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.auth-btn:disabled {
+  background: #7dd3fc;
+  cursor: not-allowed;
+}
