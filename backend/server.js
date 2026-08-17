@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000
 connectDB()
 
 // Middleware
-app.use(cors({ origin: process.env.CLIENT_URL || 'http://localhost:5173' }))
+app.use(cors({ origin: process.env.CLIENT_URL || ' https://shaina2005.github.io/shiv_softs/' }))
 app.use(express.json())
 
 // Routes
